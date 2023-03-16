@@ -28,15 +28,15 @@ function Navbar() {
       zIndex={1}
     >
       <Box>
-        <Text color="white" fontWeight="bold">My Website</Text>
+        <Text color="white" fontWeight="bold">My Portfolio</Text>
       </Box>
       <Spacer />
       <Box>
-        <Button variant="ghost" color="white" mr={4}>Home</Button>
-        <Button variant="ghost" color="white" mr={4}>About</Button>
-        <Button variant="ghost" color="white" mr={4}>Projects</Button>
-        <Button variant="ghost" color="white" mr={4}>Skills</Button>
-        <Button variant="ghost" color="white" mr={4}>Contact</Button>
+        <Button variant="ghost" color="white" mr={4}>HOME</Button>
+        <Button variant="ghost" color="white" mr={4}>ABOUT</Button>
+        <Button variant="ghost" color="white" mr={4}>PROJECTS</Button>
+        <Button variant="ghost" color="white" mr={4}>SKILLS</Button>
+        <Button variant="ghost" color="white" mr={4}>CONTACT</Button>
       </Box>
     </Flex>
   );
