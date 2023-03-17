@@ -6,7 +6,7 @@ const Main = () => {
     return (
         <Box>
             <Flex justifyContent='center' alignItems='center'>
-                <Avatar size='3xl' src='../assets/me3.jpg' alt='picture of me'/>
+                <Avatar size='3xl' src='../assets/me.jpg' alt='picture of me'/>
                 <Stack spacing={4} ml={4}>
                 <Text
                     bgGradient='linear(to-l, #7928CA, #FF0080)'
