@@ -4,12 +4,13 @@ import {
     FormLabel,
     Input,
     FormHelperText,
-    Textarea
+    Textarea,
+    Box
   } from '@chakra-ui/react'
 
 const Contact = () => {
     return (
-        <>
+        <Box mt='200px'>
             <h2>Contact</h2>
             <FormControl>
                 <FormLabel>Email address</FormLabel>
@@ -17,7 +18,7 @@ const Contact = () => {
                 <Textarea width='550px' mt={5} placeholder='Write your message here...' resize='none'/>
                 <FormHelperText>We'll never share your email.</FormHelperText>
             </FormControl>
-        </>
+        </Box>
     );
 };
 
