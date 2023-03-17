@@ -12,13 +12,20 @@ import { Box,
     Button
 } from '@chakra-ui/react'
 import React from 'react'
+import theme from './Chakra_theme'
 
 export const Projects = () => {
   return (
-    <Box>
+    <Box mt='200px'>
         <Text fontSize='3xl'>Projects</Text>
         <Flex justifyContent='center' alignItems='center'>
-        <Card maxW='sm' m={2}>
+        <Card 
+            maxW='sm' 
+            m={2}
+            bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
+            border={`1px solid ${theme.colors.darkGray}`}
+            borderRadius='10px'
+            color='white'>
             <CardBody>
                 <Image
                 src='https://images.unsplash.com/photo-1470058869958-2a77ade41c02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
@@ -34,12 +41,22 @@ export const Projects = () => {
             </CardBody>
             <Divider />
             <CardFooter>
-                <Button variant='solid' colorScheme='blue'>
-                    Check out on GitHub
+                <Button 
+                        variant='solid' 
+                        bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                        color='white'
+                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
+                Check out on GitHub
                 </Button>
             </CardFooter>
             </Card>
-            <Card maxW='sm' m={2}>
+            <Card 
+                maxW='sm' 
+                m={2}
+                bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
+                border={`1px solid ${theme.colors.darkGray}`}
+                borderRadius='10px'
+                color='white'>
             <CardBody>
                 <Image
                 src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
@@ -55,12 +72,22 @@ export const Projects = () => {
             </CardBody>
             <Divider />
             <CardFooter>
-                <Button variant='solid' colorScheme='blue'>
-                    Check out on GitHub
+            <Button 
+                    variant='solid' 
+                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                    color='white'
+                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
+                Check out on GitHub
                 </Button>
             </CardFooter>
             </Card>
-            <Card maxW='sm' m={2}>
+            <Card 
+                maxW='sm' 
+                m={2}
+                bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
+                border={`1px solid ${theme.colors.darkGray}`}
+                borderRadius='10px'
+                color='white'>
             <CardBody>
                 <Image
                 src='https://images.unsplash.com/photo-1566241477600-ac026ad43874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=846&q=80'
@@ -76,7 +103,11 @@ export const Projects = () => {
             </CardBody>
             <Divider />
             <CardFooter>
-                <Button variant='solid' colorScheme='blue'>
+                <Button 
+                    variant='solid' 
+                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                    color='white'
+                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
                     Check out on GitHub
                 </Button>
             </CardFooter>
