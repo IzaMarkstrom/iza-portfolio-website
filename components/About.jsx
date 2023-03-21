@@ -17,13 +17,11 @@ const About = () => {
                 <Card
                     direction={{ base: 'column', sm: 'row' }}
                     overflow='hidden'
-                    variant='outline'
+                    borderRadius='30px'
                     maxW='1500px'
                     mx='auto'
                     p={2}
                     bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
-                    borderRadius='10px'
                     color='white'
                     >
 

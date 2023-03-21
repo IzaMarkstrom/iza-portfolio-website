@@ -23,8 +23,7 @@ export const Skills = () => {
                 <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(150px, 1fr))'>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -36,8 +35,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -49,8 +47,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -62,8 +59,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -75,8 +71,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -88,8 +83,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -101,8 +95,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -114,8 +107,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -127,8 +119,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -140,8 +131,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -153,8 +143,7 @@ export const Skills = () => {
                 </Card>
                 <Card 
                     alignItems='center'                 
-                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.primary})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
+                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
                     color='white'>
                     <CardHeader>
@@ -167,72 +156,6 @@ export const Skills = () => {
             </SimpleGrid>
             </Box>
             </Flex>
-
-
-            {/* <Grid templateColumns='repeat(3, 1fr)' gap={2} mr='100px' ml='100px'> */}
-                {/* <GridItem w='100%'>
-                    <Text >HTML</Text>
-                    <Image src='../assets/skills/html.png' />
-                </GridItem>
-                <GridItem w='100%'>
-                    <Text >CSS</Text>
-                    <Image src='../assets/skills/css.png' />
-                </GridItem>
-                <GridItem w='100%'>
-                    <Text >JavaScript</Text>
-                    <Image src='../assets/skills/javascript.png' />
-                </GridItem>
-                <GridItem w='100%'>
-                    <Text >React</Text>
-                    <Image src='../assets/skills/react.png' /> 
-                </GridItem>
-                <GridItem w='100%'>
-                    <Text >Vue</Text>
-                    <Image src='../assets/skills/rsz_1vuejs_logo_2svg.png' />
-                </GridItem>
-                <GridItem w='100%' bg='papayawhip'>
-                    <Text >NodeJs</Text>
-                    <Image src='../assets/skills/node.png' />
-                </GridItem>
-                <GridItem w='100%'>
-                    <Text >MongoDB</Text>
-                    <Image src='../assets/skills/mongo.png' />
-                </GridItem>
-                <GridItem w='100%' bg='papayawhip'>
-                    <Text >NextJs</Text>
-                    <Image src='../assets/skills/nextjs.png' />
-                </GridItem>
-            </Grid> */}
-
-        {/* <Flex flexDirection='row'>
-            <Box flexDirection='column'>
-                <Image src='../assets/skills/html.png' />
-            </Box>
-            <Box flexDirection='column '>
-                <Image src='../assets/skills/css.png' />
-            </Box>
-            <Box flexDirection='column '>
-                <Image src='../assets/skills/javascript.png' />
-            </Box>
-            <Box flexDirection='column '>
-                <Image src='../assets/skills/react.png' />
-            </Box>
-            <Box flexDirection='column '>
-                <Image src='../assets/skills/node.png' />
-            </Box>
-        </Flex>
-        <Flex flexDirection='row'>
-            <Box flexDirection='column '>
-                <Image src='../assets/skills/mongo.png' />
-            </Box>
-            <Box flexDirection='column '>
-                <Image src='../assets/skills/nextjs.png' />
-            </Box>
-            <Box flexDirection='column '>
-                <Image src='../assets/skills/rsz_1vuejs_logo_2svg.png' />
-            </Box>
-            
-        </Flex> */}
     </Box>
   )
 }

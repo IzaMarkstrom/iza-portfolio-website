@@ -6,7 +6,6 @@ import { Box,
     Heading, 
     CardBody,
     Card,
-    Divider,
     CardFooter,
     Button
 } from '@chakra-ui/react'
@@ -24,7 +23,6 @@ export const Projects = () => {
                 maxW='sm' 
                 m={2}
                 bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
-                border={`1px solid ${theme.colors.darkGray}`}
                 borderRadius='10px'
                 color='white'>
                 <CardBody>
@@ -40,14 +38,14 @@ export const Projects = () => {
                     </Text>
                     </Stack>
                 </CardBody>
-                <Divider />
                 <CardFooter>
                     <Button 
                         variant='link'
-                        p={2} 
+                        p={3} 
                         href='https://github.com/IzaMarkstrom/webshop'
                         bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
                         color='white'
+                        borderRadius='50px'
                         _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
                         Check out on GitHub
                     </Button>
@@ -57,7 +55,6 @@ export const Projects = () => {
                     maxW='sm' 
                     m={2}
                     bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
                     borderRadius='10px'
                     color='white'>
                 <CardBody>
@@ -73,12 +70,13 @@ export const Projects = () => {
                     </Text>
                     </Stack>
                 </CardBody>
-                <Divider />
                 <CardFooter>
                 <Button 
                         variant='solid' 
+                        p={3}
                         bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
                         color='white'
+                        borderRadius='50px'
                         _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
                     Check out on GitHub
                     </Button>
@@ -88,7 +86,6 @@ export const Projects = () => {
                     maxW='sm' 
                     m={2}
                     bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
                     borderRadius='10px'
                     color='white'>
                 <CardBody>
@@ -104,12 +101,13 @@ export const Projects = () => {
                     </Text>
                     </Stack>
                 </CardBody>
-                <Divider />
                 <CardFooter>
                     <Button 
                         variant='solid' 
-                        bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.background2})`} 
+                        p={3}
+                        bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
                         color='white'
+                        borderRadius='50px'
                         _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
                         Check out on GitHub
                     </Button>
@@ -119,7 +117,6 @@ export const Projects = () => {
                     maxW='sm' 
                     m={2}
                     bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
-                    border={`1px solid ${theme.colors.darkGray}`}
                     borderRadius='10px'
                     color='white'>
                 <CardBody>
@@ -135,12 +132,13 @@ export const Projects = () => {
                     </Text>
                     </Stack>
                 </CardBody>
-                <Divider />
                 <CardFooter>
                     <Button 
                         variant='solid' 
+                        p={3}
                         bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
                         color='white'
+                        borderRadius='50px'
                         _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
                         Check out on GitHub
                     </Button>
