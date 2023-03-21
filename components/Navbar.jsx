@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Flex, Text, Button, Spacer, useMediaQuery, Menu, MenuButton, MenuItem, MenuList, IconButton } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import NextLink from "next/link"
 import theme from './Chakra_theme';
 
 function Navbar() {
@@ -80,36 +81,56 @@ function Navbar() {
     </Box>
       ) : (
         <Box>
-          <Button
-            variant='solid' 
-            bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
-            color='white'
-            borderRadius='50px'
-            _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>HOME</Button>
-          <Button
-            variant='solid' 
-            bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`}  
-            color='white'
-            borderRadius='50px'
-            _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>ABOUT</Button>
-          <Button
-            variant='solid' 
-            bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`}  
-            color='white'
-            borderRadius='50px'
-            _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>PROJECTS</Button>
-          <Button
-            variant='solid' 
-            bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`}  
-            color='white'
-            borderRadius='50px'
-            _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>SKILLS</Button>
-          <Button
-            variant='solid' 
-            bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`}  
-            color='white'
-            borderRadius='50px'
-            _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>CONTACT</Button>
+            <NextLink href='#home'>
+                <Button
+                    variant='solid' 
+                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                    color='white'
+                    borderRadius='50px'
+                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
+                        HOME
+                </Button>
+            </NextLink>
+            <NextLink href='#about'>
+                <Button
+                    variant='solid' 
+                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                    color='white'
+                    borderRadius='50px'
+                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
+                        ABOUT
+                </Button>
+            </NextLink>
+            <NextLink href='#projects'>
+                <Button
+                    variant='solid' 
+                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                    color='white'
+                    borderRadius='50px'
+                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
+                        PROJECTS
+                </Button>
+            </NextLink>
+            <NextLink href='#skills'>
+                <Button
+                    variant='solid' 
+                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                    color='white'
+                    borderRadius='50px'
+                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
+                        SKILLS
+                </Button>
+            </NextLink>
+            <NextLink href='#contact'>
+                <Button
+                    variant='solid' 
+                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                    color='white'
+                    borderRadius='50px'
+                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
+                        CONTACT
+                </Button>
+            </NextLink>
         </Box>
       )}
     </Flex>
