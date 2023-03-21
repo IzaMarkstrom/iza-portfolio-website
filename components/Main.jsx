@@ -6,24 +6,27 @@ const Main = () => {
     return (
         <Box>
             <Flex justifyContent='center' alignItems='center'>
-                <Avatar size='3xl' src='../assets/me.jpg' alt='picture of me'/>
+                <Box boxShadow="0 0 20px rgba(99, 63, 211, 0.9)" borderRadius="full" overflow="hidden">
+                    <Avatar 
+                        size='3xl' 
+                        src='../assets/me.jpg' 
+                        alt='picture of me'
+                        />
+                </Box>
                 <Stack spacing={4} ml={4}>
                 <Text
-                    bgGradient='linear(to-l, #7928CA, #FF0080)'
-                    bgClip='text'
                     fontSize='6xl'
                     fontWeight='extrabold'
                     >
                     Iza Markström
                 </Text>
                 <Text
-                    bgGradient='linear(to-l, #7928CA, #FF0080)'
-                    bgClip='text'
-                    fontSize='4xl'
+                    fontSize='6xl'
                     fontWeight='extrabold'
                     >
                     Full Stack Web Developer
                 </Text>
+                <Text as='i' fontSize='2xl'>Not everything is #000000 or #FFFFFF</Text>
                 </Stack>
             </Flex>
         </Box>
