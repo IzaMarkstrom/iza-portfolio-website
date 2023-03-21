@@ -13,7 +13,7 @@ import theme from './Chakra_theme'
 
 export const Skills = () => {
   return (
-    <Box mt='200px'>
+    <Box mt='200px' id='skills'>
         <Flex alignItems='center' flexDir='column'>
             <Text fontSize='3xl' mb={4}>Skills</Text>
             <Text fontSize='3xl'>I prefer the MERN stack, but these are the different programming languages I have been coding with</Text> 

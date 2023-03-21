@@ -14,7 +14,7 @@ import theme from './Chakra_theme'
 
 export const Projects = () => {
   return (
-    <Box mt='200px'>
+    <Box mt='200px' id='projects'>
         <Flex alignItems='center' flexDir='column'>
             <Text fontSize='3xl'>Projects</Text>
         </Flex>

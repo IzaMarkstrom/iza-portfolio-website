@@ -5,7 +5,7 @@ const Main = () => {
     const [isMobile] = useMediaQuery("(max-width: 768px)");
 
     return (
-        <Flex justifyContent='center'>
+        <Flex justifyContent='center' id='home'>
             <Stack 
                 spacing={4} 
                 ml={isMobile ? 4 : 0} // set ml=0 on smaller screens
