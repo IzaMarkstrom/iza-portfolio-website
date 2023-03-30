@@ -1,4 +1,4 @@
-import { Box, 
+import { Grid, 
     Flex, 
     Text, 
     Image, 
@@ -10,21 +10,20 @@ import { Box,
     Button
 } from '@chakra-ui/react'
 import React from 'react'
+import NextLink from "next/link"
 import theme from './Chakra_theme'
 
 export const Projects = () => {
   return (
-    <Box mt='200px' id='projects'>
-        <Flex alignItems='center' flexDir='column'>
-            <Text fontSize='3xl'>Projects</Text>
-        </Flex>
-        <Flex justifyContent='center' flexDir='row'>
+    <>
+    <Flex justifyContent='center' mt='200px' id='projects' flexDir='column'>
+    <Text fontSize='3xl' alignSelf='center' mb={4}>Projects</Text>
+        
+        <Grid gap='2em' gridTemplateColumns='repeat(auto-fit, minmax(250px, 1fr))'>
             <Card 
-                maxW='sm' 
-                m={2}
                 bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                 borderRadius='10px'
-                color='white'>
+                color='black'>
                 <CardBody>
                     <Image
                     src='../assets/projects/PlantShop.png'
@@ -43,20 +42,20 @@ export const Projects = () => {
                         variant='link'
                         p={3} 
                         href='https://github.com/IzaMarkstrom/webshop'
-                        bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                        bgGradient={`linear(45deg, ${theme.colors.primary}, ${theme.colors.darkGreen})`} 
                         color='white'
                         borderRadius='50px'
-                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
-                        Check out on GitHub
+                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.lightPurple}`}}>
+                            <NextLink href='https://github.com/IzaMarkstrom/webshop' target='_blank'>
+                                Link to GitHub
+                            </NextLink>
                     </Button>
                 </CardFooter>
                 </Card>
-                <Card 
-                    maxW='sm' 
-                    m={2}
+                <Card
                     bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
-                    color='white'>
+                    color='black'>
                 <CardBody>
                     <Image
                     src='../assets/projects/nissegram.PNG'
@@ -74,20 +73,20 @@ export const Projects = () => {
                 <Button 
                         variant='solid' 
                         p={3}
-                        bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                        bgGradient={`linear(45deg, ${theme.colors.primary}, ${theme.colors.darkGreen})`} 
                         color='white'
                         borderRadius='50px'
-                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
-                    Check out on GitHub
+                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.yellow}`}}>
+                            <NextLink href='https://github.com/IzaMarkstrom/Nissegram-Hackaton' target='_blank'>
+                                Link to GitHub
+                            </NextLink>
                     </Button>
                 </CardFooter>
                 </Card>
                 <Card 
-                    maxW='sm' 
-                    m={2}
                     bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
-                    color='white'>
+                    color='black'>
                 <CardBody>
                     <Image
                     src='https://images.unsplash.com/photo-1566241477600-ac026ad43874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=846&q=80'
@@ -105,20 +104,20 @@ export const Projects = () => {
                     <Button 
                         variant='solid' 
                         p={3}
-                        bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                        bgGradient={`linear(45deg, ${theme.colors.primary}, ${theme.colors.darkGreen})`} 
                         color='white'
                         borderRadius='50px'
-                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
-                        Check out on GitHub
+                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.yellow}`}}>
+                            <NextLink href='https://github.com/IzaMarkstrom/twitter-clone' target='_blank'>
+                                Link to GitHub
+                            </NextLink>
                     </Button>
                 </CardFooter>
                 </Card>
                 <Card 
-                    maxW='sm' 
-                    m={2}
                     bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
                     borderRadius='10px'
-                    color='white'>
+                    color='black'>
                 <CardBody>
                     <Image
                     src='../assets/projects/island.PNG'
@@ -128,7 +127,7 @@ export const Projects = () => {
                     <Stack mt='6' spacing='3'>
                     <Heading size='md'>Iceland on Horseback</Heading>
                     <Text>
-                        This is a Twitter clone I made trying out the JavaScript library Pug. It was fun and interesting and the rest is built with NodeJs, Express and React. It is a full stack website, so you can create an account, log in and post tweets.
+                        This was my first HTML and CSS project. I made it to practice my skills and to get a better understanding of how to use HTML and CSS.
                     </Text>
                     </Stack>
                 </CardBody>
@@ -136,15 +135,30 @@ export const Projects = () => {
                     <Button 
                         variant='solid' 
                         p={3}
-                        bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
+                        bgGradient={`linear(45deg, ${theme.colors.primary}, ${theme.colors.darkGreen})`} 
                         color='white'
                         borderRadius='50px'
-                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}}>
-                        Check out on GitHub
+                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.yellow}`}}>
+                            <NextLink href='https://github.com/IzaMarkstrom/IzaMarkstrom.github.io' target='_blank'>
+                                Link to GitHub
+                            </NextLink>
+                    </Button>
+                    <Button 
+                        variant='solid' 
+                        p={3}
+                        ml={3}
+                        bgGradient={`linear(45deg, ${theme.colors.primary}, ${theme.colors.darkGreen})`} 
+                        color='white'
+                        borderRadius='50px'
+                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.yellow}`}}>
+                            <NextLink href='https://izamarkstrom.github.io/home.html' target='_blank'>
+                                Preview
+                            </NextLink>
                     </Button>
                 </CardFooter>
                 </Card>
-            </Flex>
-    </Box>
+            </Grid>
+    </Flex>
+    </>
   )
 }

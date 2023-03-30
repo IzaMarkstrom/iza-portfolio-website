@@ -1,98 +1,165 @@
 import { Box, 
     Text, 
     Image,
-    Stack,
-    Flex,
-    Card,
-    CardBody,
-    useMediaQuery
+    useMediaQuery,
+    GridItem,
+    Grid,
+    Button,
+    Flex
  } from '@chakra-ui/react';
 import React from 'react';
 import theme from './Chakra_theme'
 
-const About = () => {
+function About() {
     const [isMobile] = useMediaQuery("(max-width: 768px)");
-    return (
-        <Flex justifyContent='center' mt='200px' id='about'>
-        <Stack 
-            spacing={4} 
-            ml={isMobile ? 4 : 0} // set ml=0 on smaller screens
-            direction={isMobile ? "row" : "column"} // set direction to row on larger screens and column on smaller screens
-            >
-                {isMobile ? (
-                            <Flex justifyContent='center' alignItems='center' flexDir='column'>
-                                <Text fontSize='xl'>About me</Text>
-                                <Card
-                                    direction={{ base: 'column', sm: 'column' }}
-                                    overflow='hidden'
-                                    borderRadius='30px'
-                                    maxW='1500px'
-                                    mx='auto'
-                                    p={2}
-                                    bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
-                                    color='white'
-                                    >
-                        
-                                <Stack>
-                                    <CardBody>
-                                    <Text fontSize='m'>
-                                        I'm a full stack web developer with a passion for learning new technologies. 
-                                        I'm currently working on a project that uses React, TypeScript, NextjS, Node.js, 
-                                        Express, and MongoDB. I come from a background of many years in the travel industry. 
-                                        The pandemic let me explore my interest for programming and set me on a path of pursuing 
-                                        my dream of becomming a web developer. Apart from coding, I love to dance shuffle and going to both small and big concerts.
-                                        I also sew my own pirate clothes for the Medieval week on Gotland. 
-                                    </Text>
-                                    </CardBody>
-                                </Stack>
-                                <Image
-                                    alignSelf='center'
-                                    objectFit='cover'
-                                    maxW={{ base: '100%', sm: '400px' }}
-                                    src='../assets/Presentation1.jpg'
-                                    alt='Laptop and phone on a desk'
-                                />
-                            </Card>
-                        </Flex>
 
-                ) : (
-                    <Flex justifyContent='center' alignItems='center' flexDir='column'>
-                        <Text fontSize='3xl'>About me</Text>
-                        <Card
-                            direction={{ base: 'column', sm: 'row' }}
-                            overflow='hidden'
-                            borderRadius='30px'
-                            maxW='1500px'
-                            mx='auto'
-                            p={2}
-                            bgGradient={`linear(to-bl, ${theme.colors.background} 50%, ${theme.colors.background2})`}
-                            color='white'
-                            >
-        
-                            <Stack>
-                                <CardBody>
-                                <Text fontSize='2xl'>
-                                    I'm a full stack web developer with a passion for learning new technologies. 
-                                    I'm currently working on a project that uses React, TypeScript, NextjS, Node.js, 
-                                    Express, and MongoDB. I come from a background of many years in the travel industry. 
-                                    The pandemic let me explore my interest for programming and set me on a path of pursuing 
-                                    my dream of becomming a web developer. Apart from coding, I love to dance shuffle and going to both small and big concerts.
-                                    I also sew my own pirate clothes for the Medieval week on Gotland. 
-                                </Text>
-                                </CardBody>
-                            </Stack>
-                            <Image
-                                objectFit='cover'
-                                maxW={{ base: '100%', sm: '400px' }}
-                                src='../assets/Presentation1.jpg'
-                                alt='Laptop and phone on a desk'
-                            />
-                        </Card>
-                    </Flex>
-                )}
-        </Stack>
-        </Flex>
+    return (
+        <Grid 
+            h='100vh' 
+            mt='200px' 
+            ml={isMobile ? '0' : '5%'}
+            gridTemplateColumns={isMobile ? '100%' : '35% 45%'}
+            gap='10%'
+            id='about'
+            >
+
+            {isMobile ? ( 
+                <>
+                    <Grid id='about_me' borderRadius='2rem' mb={7} h='300px' minW='300px' maxW='300px'>
+                        <Image src='../assets/me2.jpg' alt='me' id='about_me_image' borderRadius='2rem' />
+                    </Grid>
+                    <Grid gridTemplateColumns='repeat(auto-fit, minmax(250px, 1fr))' justifyContent='center' alignItems='center'>
+
+                <Box className='flip_card' h='200px' minW='200px' maxW='200px'>
+                    <Box className='flip_card_inner'>
+                        <Box className='flip_card_front' borderRadius='2rem'>
+                            <Text color='white' fontSize='xl' textAlign='center' mt={4}>Shuffle</Text>
+                        </Box>
+                        <Box className='flip_card_back'>
+                            <Image src='../assets/rsz_shuffle.jpg' borderRadius='2rem' h='200px' minW='200px' maxW='200px'/>
+                        </Box>
+                    </Box>
+                </Box>
+
+                <Box className='flip_card' h='200px' minW='200px' maxW='200px'>
+                    <Box className='flip_card_inner'>
+                        <Box className='flip_card_front' borderRadius='2rem'>
+                            <Text color='white' fontSize='xl' textAlign='center' mt={4}>Debugging buddy</Text>
+                        </Box>
+                        <Box className='flip_card_back'>
+                            <Image src='../assets/rsz_11okie.jpg' borderRadius='2rem' h='200px' minW='200px' maxW='200px'/>
+                        </Box>
+                    </Box>
+                </Box>
+
+
+                <Box className='flip_card' h='200px' minW='200px' maxW='200px'>
+                    <Box className='flip_card_inner'>
+                        <Box className='flip_card_front' borderRadius='2rem'>
+                            <Text color='white' fontSize='xl' textAlign='center' mt={4}>Pirate</Text>
+                        </Box>
+                        <Box className='flip_card_back'>
+                            <Image src='../assets/rsz_pirate.jpg' borderRadius='2rem' h='200px' minW='200px' maxW='200px'/>
+                        </Box>
+                    </Box>
+                </Box>
+                    </Grid>
+
+                <GridItem>
+                    <Text fontSize='m' color='blackAlpha.800'>
+                        I'm a full stack web developer with a passion for learning new technologies. 
+                        I'm currently working on a project that uses React, TypeScript, Node.js, 
+                        Express, and MongoDB. Instead of a rubber duck helping me using the method rubber-duck-debugging, 
+                        I have a different animal as you can see in one of the pictures above.
+                        I come from a background of many years in the travel industry. 
+                        The pandemic let me explore my interest for programming and set me on a path of pursuing 
+                        my dream of becomming a web developer. Apart from coding, I love to dance shuffle and going to both small and big concerts.
+                        I also sew my own pirate clothes for the Medieval week on Gotland. 
+                    </Text>
+                </GridItem>
+                <GridItem>
+                    <Button 
+                        variant='solid' 
+                        bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.darkGreen})`} 
+                        color='white'
+                        _hover={{boxShadow: `0 0 20px 3px ${theme.colors.lightPurple}`}}
+                        p='10px'
+                        borderRadius='20px'
+                        >Lets talk!</Button>
+                </GridItem>
+                    </>
+            ) : (  
+            <>         
+            <Grid id='about_me' borderRadius='2rem' maxH='400px' maxW='400px'>
+                <Image src='../assets/me2.jpg' alt='me' id='about_me_image' borderRadius='2rem' maxH='400px' />
+            </Grid>
+            <Grid gridTemplateColumns='repeat(auto-fit, minmax(200px, 1fr))'>
+                        <Box className='flip_card' h='200px' minW='200px'  maxW='200px'>
+                            <Box className='flip_card_inner'>
+                                <Box className='flip_card_front' borderRadius='2rem'>
+                                    <Text color='white' fontSize='2xl' textAlign='center' mt={4}>Shuffle</Text>
+                                </Box>
+                                <Box className='flip_card_back'>
+                                    <Image src='../assets/rsz_shuffle.jpg' borderRadius='2rem' h='200px' minW='200px'  maxW='200px'/>
+                                </Box>
+                            </Box>
+                        </Box>
+
+                        <Box className='flip_card' h='200px' minW='200px'  maxW='200px'>
+                            <Box className='flip_card_inner'>
+                                <Box className='flip_card_front' borderRadius='2rem'>
+                                    <Text color='white' fontSize='2xl' textAlign='center' mt={4}>Debugging</Text>
+                                    <Text color='white' fontSize='2xl' textAlign='center' mt={4}>buddy</Text>
+                                </Box>
+                                <Box className='flip_card_back'>
+                                    <Image src='../assets/rsz_11okie.jpg' borderRadius='2rem' h='200px' minW='200px'  maxW='200px'/>
+                                </Box>
+                            </Box>
+                        </Box>
+
+
+                        <Box className='flip_card' h='200px' minW='200px'  maxW='200px'>
+                            <Box className='flip_card_inner'>
+                                <Box className='flip_card_front' borderRadius='2rem'>
+                                    <Text color='white' fontSize='2xl' textAlign='center' mt={4}>Pirate</Text>
+                                </Box>
+                                <Box className='flip_card_back'>
+                                    <Image src='../assets/rsz_pirate.jpg' borderRadius='2rem' h='200px' minW='200px'  maxW='200px'/>
+                                </Box>
+                            </Box>
+                        </Box>
+
+                        <GridItem colSpan={3}>
+                            <Text fontSize='l' color='blackAlpha.800'>
+                            I'm a full stack web developer with a passion for learning new technologies. 
+                            I'm currently working on a project that uses React, TypeScript, Node.js, 
+                            Express, and MongoDB. Instead of a rubber duck helping me using the method rubber-duck-debugging, 
+                            I have a different animal as you can see in one of the pictures above.
+                            I come from a background of many years in the travel industry. 
+                            The pandemic let me explore my interest for programming and set me on a path of pursuing 
+                            my dream of becomming a web developer. Apart from coding, I love to dance shuffle and going to both small and big concerts.
+                            I also sew my own pirate clothes for the Medieval week on Gotland. 
+                            </Text>
+                        </GridItem>
+                        <GridItem>
+                            <Button 
+                                variant='solid' 
+                                bgGradient={`linear(35deg, ${theme.colors.primary}, ${theme.colors.darkGreen})`} 
+                                color='white'
+                                _hover={{boxShadow: `0 0 10px 3px ${theme.colors.primary}`}}
+                                // size='sm'
+                                p='30px'
+                                borderRadius='20px'
+                                >Lets talk!</Button>
+                        </GridItem>
+                                </Grid>
+
+                    </>
+            )}
+
+        </Grid>
     );
 };
 
 export default About;
+

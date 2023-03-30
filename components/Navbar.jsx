@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Flex, Text, Button, Spacer, useMediaQuery, Menu, MenuButton, MenuItem, MenuList, IconButton } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, Spacer, useMediaQuery, Menu, MenuButton, MenuItem, MenuList, IconButton } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import NextLink from "next/link"
 import theme from './Chakra_theme';
@@ -24,17 +24,24 @@ function Navbar() {
     <Flex
       as="nav"
       position="fixed"
-      top={0}
-      p={4}
+      bottom={0}
+      p={2}
+      // mt={4}
       w="100%"
-      bg={isScrolled ? 'rgba(37, 59, 71, 0.9)' : 'transparent'}
+      bgGradient={`linear(15deg, ${theme.colors.darkGreen} 50%, ${theme.colors.primary})`} 
+      bg={isScrolled ? 'rgba(2, 45, 62, 0.6)' : 'linear(15deg, ${theme.colors.darkGreen} 50%, ${theme.colors.primary})'}
       boxShadow={isScrolled ? 'sm' : 'none'}
       transition="all 0.3s ease-in-out"
-      zIndex={1}
+      zIndex={4}
     >
-      <Box>
-        <Text color="white" fontWeight="bold" p={2}>My Portfolio</Text>
-      </Box>
+      <Flex>
+        <NextLink href='https://github.com/IzaMarkstrom'>
+          <Image src='../assets/github.png' alt='Github' w='40px' mr='10px' />
+        </NextLink>
+        <NextLink href='https://www.linkedin.com/in/iza-markstr%C3%B6m/'>
+          <Image src='../assets/linkedin.png' alt='Github' w='40px' />
+        </NextLink>
+      </Flex>
       <Spacer />
       {isMobile ? (
         <Box>
@@ -43,36 +50,57 @@ function Navbar() {
                     as={IconButton}
                     aria-label='Options'
                     icon={<HamburgerIcon />}
+                    color='white'
                     variant='outline'
+                    border='2px solid white'
                 />
-                <MenuList bg='black'>
+                <MenuList bg='white'>
                     <MenuItem 
-                        bg={theme.colors.background2}
-                        _hover={{bg:theme.colors.primary, borderRadius:'30px'}} mr={4}
+                        bg={theme.colors.background}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        mr={4}
+                        mb={1}
+                        borderRadius='1rem'
                         >
-                    HOME
+                        <NextLink href='#home'>
+                          HOME
+                        </NextLink>
                     </MenuItem>
                     <MenuItem 
-                        bg={theme.colors.background2}
-                        _hover={{bg:theme.colors.primary, borderRadius:'30px'}} mr={4}
+                        bg={theme.colors.background}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        mr={4}
+                        mb={1}
+                        borderRadius='1rem'
                         >
-                    ABOUT
+                        <NextLink href='#about'>
+                          ABOUT
+                        </NextLink>
                     </MenuItem>
                     <MenuItem 
-                        bg={theme.colors.background2}
-                        _hover={{bg:theme.colors.primary, borderRadius:'30px'}} mr={4}
+                        bg={theme.colors.background}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        mr={4}
+                        mb={1}
+                        borderRadius='1rem'
                         >
                     PROJECTS
                     </MenuItem>
                     <MenuItem 
-                        bg={theme.colors.background2}
-                        _hover={{bg:theme.colors.primary, borderRadius:'30px'}} mr={4}
+                        bg={theme.colors.background}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        mr={4}
+                        mb={1}
+                        borderRadius='1rem'
                         >
                     SKILLS
                     </MenuItem>
                     <MenuItem 
-                        bg={theme.colors.background2}
-                        _hover={{bg:theme.colors.primary, borderRadius:'30px'}} mr={4}
+                        bg={theme.colors.background}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        mr={4}
+                        mb={1}
+                        borderRadius='1rem'
                         >
                     CONTACT
                     </MenuItem>
@@ -80,56 +108,21 @@ function Navbar() {
         </Menu>
     </Box>
       ) : (
-        <Box>
+        <Box mr='80px' mt={2}>
             <NextLink href='#home'>
-                <Button
-                    variant='solid' 
-                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
-                    color='white'
-                    borderRadius='50px'
-                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
-                        HOME
-                </Button>
+              <Text as='b' color='white' fontSize='l' m={3} _hover={{color:'white'}}>HOME</Text>
             </NextLink>
             <NextLink href='#about'>
-                <Button
-                    variant='solid' 
-                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
-                    color='white'
-                    borderRadius='50px'
-                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
-                        ABOUT
-                </Button>
+              <Text as='b' color='white' fontSize='l' m={3} _hover={{color:'white'}}>ABOUT</Text>
             </NextLink>
             <NextLink href='#projects'>
-                <Button
-                    variant='solid' 
-                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
-                    color='white'
-                    borderRadius='50px'
-                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
-                        PROJECTS
-                </Button>
+            <Text as='b' color='white' fontSize='l' m={3} _hover={{color:'white'}}>PROJECTS</Text>
             </NextLink>
             <NextLink href='#skills'>
-                <Button
-                    variant='solid' 
-                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
-                    color='white'
-                    borderRadius='50px'
-                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
-                        SKILLS
-                </Button>
+            <Text as='b' color='white' fontSize='l' m={3} _hover={{color:'white'}}>SKILLS</Text>
             </NextLink>
             <NextLink href='#contact'>
-                <Button
-                    variant='solid' 
-                    bgGradient={`linear(to-r, ${theme.colors.primary}, ${theme.colors.blue})`} 
-                    color='white'
-                    borderRadius='50px'
-                    _hover={{boxShadow: `0 0 20px 3px ${theme.colors.blue}`}} mr={4}>
-                        CONTACT
-                </Button>
+            <Text as='b' color='white' fontSize='l' m={4} _hover={{color:'white'}}>CONTACT</Text>
             </NextLink>
         </Box>
       )}
