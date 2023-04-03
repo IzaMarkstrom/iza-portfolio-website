@@ -12,50 +12,84 @@ function Main() {
                 direction={isMobile ? "row" : "column"} // set direction to row on larger screens and column on smaller screens
                 >
                 {isMobile ? (
-                            <Flex justifyContent='center' alignItems='center'mt={0}>
+                            <Flex mt={0}>
                             <Stack spacing={3}>
                                 <Image 
                                     w='300px'
-                                    src='../assets/me-removebg-preview.png' 
+                                    src='../assets/meBlurred.png' 
                                     alt='picture of me'
+                                    className='image-fade'
                                     />
                                 <Stack spacing={3} alignItems='center'>
                                     <Text
                                         fontSize='3xl'
                                         fontWeight='extrabold'
+                                        className="main-text-fade"
                                         >
                                         Iza Markström
                                     </Text>
                                     <Text
                                         fontSize='3xl'
                                         fontWeight='extrabold'
+                                        justifySelf='center'
+                                        className="main-text-fade"
                                         >
-                                        Full Stack Web Developer
+                                        Full Stack Developer
                                     </Text>
-                                    <Text as='i' fontSize='xl'>Not everything is #000000 or #FFFFFF</Text>
+                                    <Text 
+                                        as='i' 
+                                        fontSize='xl'
+                                        className="main-text-fade">Not everything is #000000 or #FFFFFF</Text>
                                 </Stack>
                             </Stack>
                         </Flex>
                 ) : (
-                    <Flex alignItems='center' justifyContent='center'>
-                            <Image 
-                                src='../assets/me-removebg-preview.png' 
-                                alt='picture of me'
-                                />
-                        <Stack spacing={4} ml={4}>
-                            <Text
-                                fontSize='5xl'
-                                fontWeight='extrabold'
-                                >
-                                Iza Markström
-                            </Text>
-                            <Text
-                                fontSize='5xl'
-                                fontWeight='extrabold'
-                                >
-                                Full Stack Web Developer
-                            </Text>
-                            <Text as='i' fontSize='xl'>Not everything is #000000 or #FFFFFF</Text>
+                    <Flex
+                    alignItems="center"
+                    justifyContent="center"
+                    >
+                        <Image
+                            src="../assets/meBlurred.png"
+                            alt="picture of me"
+                            className='image-fade'
+                        />
+                    <Stack
+                      spacing={4}
+                      ml={4}
+                    >
+                      <Text
+                        fontSize="5xl"
+                        fontWeight="extrabold"
+                        className="main-text-fade"
+                        _hover={{
+                          transform: "translateY(-8px)",
+                          transition: "transform 0.3s ease-out",
+                        }}
+                      >
+                        Iza Markström
+                      </Text>
+                      <Text
+                        fontSize="5xl"
+                        fontWeight="extrabold"
+                        className="main-text-fade"
+                        _hover={{
+                          transform: "translateY(-8px)",
+                          transition: "transform 0.3s ease-out",
+                        }}
+                      >
+                        Full Stack Developer
+                      </Text>
+                      <Text
+                        as="i"
+                        fontSize="xl"
+                        className="main-text-fade"
+                        _hover={{
+                          transform: "translateY(-8px)",
+                          transition: "transform 0.3s ease-out",
+                        }}
+                      >
+                        Not everything is #000000 or #FFFFFF
+                      </Text>
                         </Stack>
                     </Flex>
                 )}
