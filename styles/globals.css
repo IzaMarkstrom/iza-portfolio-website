@@ -1,15 +1,15 @@
 body {
   margin: 0 !important;
   padding: 0 !important;
-  color: black !important;
-  background: white !important;
+  color: white !important;
+  background: rgb(27, 27, 27) !important;
   width: 100% !important;
 }
 
 #about_me {
   width: 500px;
   aspect-ratio: 1/1;
-  background: linear-gradient(45deg, #e2f0db, #022d3e, #e2f0db) !important;
+  background: linear-gradient(45deg, #13bb8b, #123945, #13bb8b) !important;
   place-items: center;
 }
 
@@ -55,8 +55,9 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip_card_front {
-  background: linear-gradient(45deg, #e2f0db, #022d3e, #e2f0db) !important;
+  background: radial-gradient(circle, #13bb8b 0%, #123945 80%) !important;
   color: black;
+  justify-self: center  !important;
 }
 
 /* Style the back side */
@@ -71,5 +72,23 @@ body {
 }
 
 
-/* bgGradient="linear(to-r, #001b2f, #03d189)" */
-/* background: linear-gradient(45deg, #ff758c, #ffaf80) !important; */
+.image-fade {
+  opacity: 0;
+  animation: fade-in 2.5s ease forwards;
+}
+
+.main-text-fade {
+  opacity: 0;
+  animation: fade-in 2.5s ease forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
