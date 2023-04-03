@@ -40,7 +40,7 @@ export const Projects = () => {
                     <Stack mt='6' spacing='3'>
                     <Heading size='md'>Plantshop</Heading>
                     <Text>
-                        This is a project was made with React, TypeScript, Node.js, Express, and MongoDB. It's a plantshop where you can add plants to your cart and checkout.You have your own profile with your cart and your last orders visable. 
+                        This is a project was made with React, TypeScript, Node.js, Express, and MongoDB. It&apos;s a plantshop where you can add plants to your cart and checkout.You have your own profile with your cart and your last orders visable. 
                     </Text>
                     </Stack>
                 </CardBody>
@@ -71,7 +71,7 @@ export const Projects = () => {
                     <Stack mt='6' spacing='3'>
                     <Heading size='md'>Nissegram</Heading>
                     <Text>
-                        During a hackaton we built this fake instagram with the assignment to have a Christmas theme. So we added a song and made cards that looks like presents until you click them and see what's hiding inside.
+                        During a hackaton we built this fake instagram with the assignment to have a Christmas theme. So we added a song and made cards that looks like presents until you click them and see what&apos;s hiding inside.
                     </Text>
                     </Stack>
                 </CardBody>
