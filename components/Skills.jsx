@@ -3,9 +3,7 @@ import { Box,
     SimpleGrid,
     Flex,
     useMediaQuery,
-    GridItem,
     Grid,
-    Spacer
 } from '@chakra-ui/react'
 import React from 'react'
 import theme from './Chakra_theme'
