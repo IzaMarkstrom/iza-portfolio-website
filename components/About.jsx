@@ -127,7 +127,7 @@ function About() {
                                     <Text color='white' fontSize='2xl' textAlign='center' mt={4}>Shuffle</Text>
                                 </Box>
                                 <Box className='flip_card_back'>
-                                    <Image src='../assets/rsz_shuffle.jpg' borderRadius='2rem' h='200px' minW='200px'  maxW='200px'/>
+                                    <Image src='../assets/rsz_shuffle.jpg' alt='me in a shuffle studio' borderRadius='2rem' h='200px' minW='200px'  maxW='200px'/>
                                 </Box>
                             </Box>
                         </Box>
@@ -139,7 +139,7 @@ function About() {
                                     <Text color='white' fontSize='2xl' textAlign='center' className='about_me_text_cards' mt={4}>buddy</Text>
                                 </Box>
                                 <Box className='flip_card_back'>
-                                    <Image src='../assets/rsz_11okie.jpg' borderRadius='2rem' h='200px' minW='200px'  maxW='200px'/>
+                                    <Image src='../assets/rsz_11okie.jpg' alt='racoon stuffed animal' borderRadius='2rem' h='200px' minW='200px'  maxW='200px'/>
                                 </Box>
                             </Box>
                         </Box>
@@ -151,7 +151,7 @@ function About() {
                                     <Text color='white' fontSize='2xl' textAlign='center' className='about_me_text_cards' mt={4}>Pirate</Text>
                                 </Box>
                                 <Box className='flip_card_back'>
-                                    <Image src='../assets/rsz_pirate.jpg' borderRadius='2rem' h='200px' minW='200px'  maxW='200px'/>
+                                    <Image src='../assets/rsz_pirate.jpg' alt='me in pirate outfit looking out to sea' borderRadius='2rem' h='200px' minW='200px'  maxW='200px'/>
                                 </Box>
                             </Box>
                         </Box>
