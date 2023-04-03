@@ -90,8 +90,8 @@ function About() {
 
                 <GridItem>
                     <Text fontSize='m' color='white'>
-                        I'm a full stack web developer with a passion for learning new technologies. 
-                        I'm currently working on a project that uses React, TypeScript, Node.js, 
+                        I&apos;m a full stack web developer with a passion for learning new technologies. 
+                        I&apos;m currently working on a project that uses React, TypeScript, Node.js, 
                         Express, and MongoDB. Instead of a rubber duck helping me to debug my code, using the method rubber-duck-debugging, 
                         I have a different animal as you can see in one of the pictures above.
                         I come from a background of many years in the travel industry. 
@@ -110,7 +110,7 @@ function About() {
                         borderRadius='20px'
                         >
                                 <NextLink href='#contact'>
-                                    Lets talk!
+                                    Let&apos;s talk!
                                 </NextLink>
                         </Button>
                 </GridItem>
@@ -158,8 +158,8 @@ function About() {
 
                         <GridItem colSpan={3}>
                             <Text fontSize='l' color='white'>
-                            I'm a full stack web developer with a passion for learning new technologies. 
-                            I'm currently working on a project that uses React, TypeScript, Node.js, 
+                            I&apos;m a full stack web developer with a passion for learning new technologies. 
+                            I&apos;m currently working on a project that uses React, TypeScript, Node.js, 
                             Express, and MongoDB.  Instead of a rubber duck helping me to debug my code, using the method rubber-duck-debugging, 
                             I have a different animal as you can see in one of the pictures above.
                             I come from a background of many years in the travel industry. 
@@ -178,7 +178,7 @@ function About() {
                                 borderRadius='20px'
                                 >
                                 <NextLink href='#contact'>
-                                    Lets talk!
+                                    Let&apos;s talk!
                                 </NextLink>
                         </Button>
                         </GridItem>
