@@ -28,8 +28,8 @@ function Navbar() {
       p={2}
       // mt={4}
       w="100%"
-      bgGradient={`linear(15deg, ${theme.colors.darkGreen} 50%, ${theme.colors.primary})`} 
-      bg={isScrolled ? 'rgba(2, 45, 62, 0.6)' : 'linear(15deg, ${theme.colors.darkGreen} 50%, ${theme.colors.primary})'}
+      bgGradient={`linear(15deg, ${theme.colors.primary} 40%, ${theme.colors.darkGreen})`} 
+      bg={isScrolled ? 'rgba(8, 57, 69, 0.4)' : 'linear(15deg, ${theme.colors.darkGreen} 50%, ${theme.colors.primary})'}
       boxShadow={isScrolled ? 'sm' : 'none'}
       transition="all 0.3s ease-in-out"
       zIndex={4}
@@ -54,10 +54,10 @@ function Navbar() {
                     variant='outline'
                     border='2px solid white'
                 />
-                <MenuList bg='white'>
+                <MenuList bg='rgba(255, 255, 255, 0.5)' >
                     <MenuItem 
-                        bg={theme.colors.background}
-                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        bg={theme.colors.primary}
+                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
@@ -67,8 +67,8 @@ function Navbar() {
                         </NextLink>
                     </MenuItem>
                     <MenuItem 
-                        bg={theme.colors.background}
-                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        bg={theme.colors.primary}
+                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
@@ -78,31 +78,37 @@ function Navbar() {
                         </NextLink>
                     </MenuItem>
                     <MenuItem 
-                        bg={theme.colors.background}
-                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        bg={theme.colors.primary}
+                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
                         >
-                    PROJECTS
+                        <NextLink href='#projects'>
+                          PROJECTS
+                        </NextLink>
                     </MenuItem>
                     <MenuItem 
-                        bg={theme.colors.background}
-                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        bg={theme.colors.primary}
+                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
                         >
-                    SKILLS
+                        <NextLink href='#skills'>
+                          SKILLS
+                        </NextLink>
                     </MenuItem>
                     <MenuItem 
-                        bg={theme.colors.background}
-                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
+                        bg={theme.colors.primary}
+                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
                         >
-                    CONTACT
+                        <NextLink href='#contact'>
+                          CONTACT
+                        </NextLink>
                     </MenuItem>
             </MenuList>
         </Menu>
