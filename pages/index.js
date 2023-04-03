@@ -18,14 +18,15 @@ export default function Home() {
       <meta name="keywords" content="portfolio" charSet="UTF-8"/>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
-      <Navbar/>
+    <Main>
 
       <Main/>
       <About/>
       <Skills/>
       <Projects/>
       <Contact/>
+      <Navbar/>
+    </Main>
 
     </>
   )
