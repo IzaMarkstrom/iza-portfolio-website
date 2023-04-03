@@ -30,7 +30,7 @@ const Contact = () => {
                     m='50px'
                     borderRadius='20px'
                     onClick={() => window.location.assign("mailto:markstrom93@hotmail.com")}
-                    >Send me an email!</Button>
+                    >Send an email!</Button>
             </Flex>
         </Box>
     );
