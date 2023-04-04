@@ -20,7 +20,7 @@ export const Projects = () => {
     <Text 
         fontSize='3xl' 
         alignSelf='center' 
-        mb={3} 
+        mb={10} 
         color='white' 
         as='b'>
             Projects
