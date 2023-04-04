@@ -13,7 +13,7 @@ function Skills() {
     const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
-    <Flex mt={isMobile ? '900px' : '200px'} id='skills' h='100vh' w='100%' flexDir='column' pl={12} pr={12}>
+    <Flex mt={isMobile ? '900px' : '200px'} id='skills' h='100vh' w='100%' flexDir='column' pl={isMobile ? 7 : 12} pr={isMobile ? 7 : 12}>
         <Flex alignItems='center' flexDir='column' mb={4}>
             <Text 
                 fontSize='3xl' 

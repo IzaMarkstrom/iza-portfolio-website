@@ -75,7 +75,7 @@ function About() {
                         </Box>
 
                     </Grid>
-                    <Grid gap='5%' justifyItems='center' pl={10} pr={10}>
+                    <Grid gap='5%' justifyItems='center' pl={7} pr={7}>
                             <Text fontSize='m' color='white'>
                                 I&apos;m a full stack web developer with a passion for learning new technologies. 
                                 Instead of a rubber duck helping me to debug my code, using the method rubber-duck-debugging, 

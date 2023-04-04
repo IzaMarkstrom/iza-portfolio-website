@@ -17,7 +17,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 function Projects() {
   return (
     <>
-    <Flex justifyContent='center' mt='200px' id='projects' flexDir='column' pl={12} pr={12}>
+    <Flex justifyContent='center' mt='200px' id='projects' flexDir='column' pl={isMobile ? 7 : 12} pr={isMobile ? 7 : 12}>
     <Text 
         fontSize='3xl' 
         alignSelf='center' 
