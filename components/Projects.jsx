@@ -12,8 +12,9 @@ import { Grid,
 import React from 'react'
 import NextLink from "next/link"
 import theme from './Chakra_theme'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
-export const Projects = () => {
+function Projects() {
   return (
     <>
     <Flex justifyContent='center' mt='200px' id='projects' flexDir='column' pl={12} pr={12}>
@@ -53,8 +54,9 @@ export const Projects = () => {
                         borderRadius='50px'
                         _hover={{bg:`${theme.colors.primary}`}}>
                             <NextLink href='https://github.com/IzaMarkstrom/webshop' target='_blank'>
-                                Link to GitHub
+                                 GitHub &nbsp;
                             </NextLink>
+                            <ExternalLinkIcon/> 
                     </Button>
                 </CardFooter>
                 </Card>
@@ -84,8 +86,9 @@ export const Projects = () => {
                         borderRadius='50px'
                         _hover={{bg:`${theme.colors.primary}`}}>
                             <NextLink href='https://github.com/IzaMarkstrom/Nissegram-Hackaton' target='_blank'>
-                                Link to GitHub
+                                GitHub &nbsp;
                             </NextLink>
+                            <ExternalLinkIcon/> 
                     </Button>
                 </CardFooter>
                 </Card>
@@ -115,8 +118,9 @@ export const Projects = () => {
                         borderRadius='50px'
                         _hover={{bg:`${theme.colors.primary}`}}>
                             <NextLink href='https://github.com/IzaMarkstrom/twitter-clone' target='_blank'>
-                                Link to GitHub
+                                GitHub &nbsp;
                             </NextLink>
+                            <ExternalLinkIcon/> 
                     </Button>
                 </CardFooter>
                 </Card>
@@ -146,8 +150,9 @@ export const Projects = () => {
                         borderRadius='50px'
                         _hover={{bg:`${theme.colors.primary}`}}>
                             <NextLink href='https://github.com/IzaMarkstrom/IzaMarkstrom.github.io' target='_blank'>
-                                Link to GitHub
+                                GitHub &nbsp;
                             </NextLink>
+                            <ExternalLinkIcon/> 
                     </Button>
                     <Button 
                         variant='solid' 
@@ -166,5 +171,7 @@ export const Projects = () => {
             </Grid>
     </Flex>
     </>
-  )
-}
+  );
+};
+
+export default Projects;
