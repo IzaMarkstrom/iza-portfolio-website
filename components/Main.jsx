@@ -5,8 +5,6 @@ function Main() {
     const [isMobile] = useMediaQuery("(max-width: 768px)");
 
     return (
-        <>
-            <Text color='rgb(27, 27, 27)'>Welcome</Text>
         <Flex justifyContent='center' h='100vh' id='home' w='100%'>
             <Stack 
                 spacing={4} 
@@ -99,7 +97,6 @@ function Main() {
                 )}
             </Stack>
         </Flex>
-        </>
     );
 };
 
