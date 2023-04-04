@@ -82,7 +82,7 @@ function About() {
                                 I have a different animal as you can see in one of the pictures above.
                             </Text>
                             <Text>
-                                I come from a background of many years in the travel industry, where I worked as a travel agent. I'm still always looking forward towards my next trip!
+                                I come from a background of many years in the travel industry, where I worked as a travel agent. I&apos;m still always looking forward towards my next trip!
                                 The pandemic let me explore my interest for programming and set me on a path of pursuing 
                                 my dream of becomming a web developer. Apart from coding, I love to dance shuffle and going to both small and big concerts.
                                 I also sew my own pirate clothes for the Medieval week on Gotland. 
