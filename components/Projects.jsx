@@ -7,7 +7,8 @@ import { Grid,
     CardBody,
     Card,
     CardFooter,
-    Button
+    Button,
+    useMediaQuery
 } from '@chakra-ui/react'
 import React from 'react'
 import NextLink from "next/link"
@@ -15,6 +16,8 @@ import theme from './Chakra_theme'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 function Projects() {
+    const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <>
     <Flex justifyContent='center' mt='200px' id='projects' flexDir='column' pl={isMobile ? 7 : 12} pr={isMobile ? 7 : 12}>
