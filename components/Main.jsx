@@ -18,13 +18,13 @@ function Main() {
                                     w='300px'
                                     src='../assets/meBlurred.png' 
                                     alt='picture of me'
-                                    // className='image-fade'
+                                    className='image-fade'
                                     />
                                 <Stack spacing={3} alignItems='center'>
                                     <Text
                                         fontSize='3xl'
                                         fontWeight='extrabold'
-                                        // className="main-text-fade"
+                                        className="main-text-fade"
                                         >
                                         Iza Markström
                                     </Text>
@@ -32,14 +32,14 @@ function Main() {
                                         fontSize='3xl'
                                         fontWeight='extrabold'
                                         justifySelf='center'
-                                        // className="main-text-fade"
+                                        className="main-text-fade"
                                         >
                                         Full Stack Developer
                                     </Text>
                                     <Text 
                                         as='i' 
                                         fontSize='xl'
-                                        // className="main-text-fade"
+                                        className="main-text-fade"
                                         >
                                             Not everything is #000000 or #FFFFFF</Text>
                                 </Stack>
@@ -53,7 +53,7 @@ function Main() {
                         <Image
                             src="../assets/meBlurred.png"
                             alt="picture of me"
-                            // className='image-fade'
+                            className='image-fade'
                         />
                     <Stack
                       spacing={4}
@@ -62,7 +62,7 @@ function Main() {
                       <Text
                         fontSize="5xl"
                         fontWeight="extrabold"
-                        // className="main-text-fade"
+                        className="main-text-fade"
                         _hover={{
                           transform: "translateY(-8px)",
                           transition: "transform 0.3s ease-out",
@@ -73,7 +73,7 @@ function Main() {
                       <Text
                         fontSize="5xl"
                         fontWeight="extrabold"
-                        // className="main-text-fade"
+                        className="main-text-fade"
                         _hover={{
                           transform: "translateY(-8px)",
                           transition: "transform 0.3s ease-out",
@@ -84,7 +84,7 @@ function Main() {
                       <Text
                         as="i"
                         fontSize="xl"
-                        // className="main-text-fade"
+                        className="main-text-fade"
                         _hover={{
                           transform: "translateY(-8px)",
                           transition: "transform 0.3s ease-out",
