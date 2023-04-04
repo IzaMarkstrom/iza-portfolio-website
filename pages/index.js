@@ -2,7 +2,7 @@ import Contact from '@/components/Contact'
 import About from '../components/About'
 import Navbar from '../components/Navbar'
 import Main from '../components/Main'
-import { Projects } from '@/components/Projects'
+import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
 import Head from 'next/head'
 
