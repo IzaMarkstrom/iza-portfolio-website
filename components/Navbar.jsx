@@ -84,8 +84,8 @@ function Navbar() {
                         mb={1}
                         borderRadius='1rem'
                         >
-                        <NextLink href='#projects'>
-                          PROJECTS
+                        <NextLink href='#skills'>
+                          SKILLS
                         </NextLink>
                     </MenuItem>
                     <MenuItem 
@@ -95,8 +95,8 @@ function Navbar() {
                         mb={1}
                         borderRadius='1rem'
                         >
-                        <NextLink href='#skills'>
-                          SKILLS
+                        <NextLink href='#projects'>
+                          PROJECTS
                         </NextLink>
                     </MenuItem>
                     <MenuItem 
@@ -121,11 +121,11 @@ function Navbar() {
             <NextLink href='#about'>
               <Text as='b' color='white' fontSize='l' m={3} _hover={{color:'white'}}>ABOUT</Text>
             </NextLink>
-            <NextLink href='#projects'>
-            <Text as='b' color='white' fontSize='l' m={3} _hover={{color:'white'}}>PROJECTS</Text>
-            </NextLink>
             <NextLink href='#skills'>
             <Text as='b' color='white' fontSize='l' m={3} _hover={{color:'white'}}>SKILLS</Text>
+            </NextLink>
+            <NextLink href='#projects'>
+            <Text as='b' color='white' fontSize='l' m={3} _hover={{color:'white'}}>PROJECTS</Text>
             </NextLink>
             <NextLink href='#contact'>
             <Text as='b' color='white' fontSize='l' m={4} _hover={{color:'white'}}>CONTACT</Text>
