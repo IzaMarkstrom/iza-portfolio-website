@@ -54,62 +54,67 @@ function Navbar() {
                     variant='outline'
                     border='2px solid white'
                 />
-                <MenuList bg='rgba(255, 255, 255, 0.5)' >
+                <MenuList bg='white' >
+                  <NextLink href='#home'>
                     <MenuItem 
-                        bg={theme.colors.primary}
-                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
+                        bg='white'
+                        color={theme.colors.primary}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
                         >
-                        <NextLink href='#home'>
                           HOME
-                        </NextLink>
                     </MenuItem>
+                  </NextLink>
+                  <NextLink href='#about'>
                     <MenuItem 
-                        bg={theme.colors.primary}
-                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
+                        bg='white'
+                        color={theme.colors.primary}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
                         >
-                        <NextLink href='#about'>
                           ABOUT
-                        </NextLink>
                     </MenuItem>
+                  </NextLink>
+                  <NextLink href='#skills'>
                     <MenuItem 
-                        bg={theme.colors.primary}
-                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
+                        bg='white'
+                        color={theme.colors.primary}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
                         >
-                        <NextLink href='#skills'>
                           SKILLS
-                        </NextLink>
                     </MenuItem>
+                  </NextLink>
+                  <NextLink href='#projects'>
                     <MenuItem 
-                        bg={theme.colors.primary}
-                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
+                        bg='white'
+                        color={theme.colors.primary}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
                         >
-                        <NextLink href='#projects'>
                           PROJECTS
-                        </NextLink>
                     </MenuItem>
+                  </NextLink>
+                  <NextLink href='#contact'>
                     <MenuItem 
-                        bg={theme.colors.primary}
-                        _hover={{bg:theme.colors.darkGreen, borderRadius:'1rem', color:'white'}} 
+                        bg='white'
+                        color={theme.colors.primary}
+                        _hover={{bg:theme.colors.primary, borderRadius:'1rem', color:'white'}} 
                         mr={4}
                         mb={1}
                         borderRadius='1rem'
                         >
-                        <NextLink href='#contact'>
                           CONTACT
-                        </NextLink>
                     </MenuItem>
+                  </NextLink>
             </MenuList>
         </Menu>
     </Box>
